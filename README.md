@@ -1,4 +1,4 @@
 Administrative and Management Documents for Geomstats
 ======================================================================
 
-* ``meeting_notes`` includes the notes from our monthly meetings.
+* ``meeting_notes`` includes the notes from Geomstats monthly meetings.
