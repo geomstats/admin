@@ -13,7 +13,7 @@ Meeting: 2022/05/03
 Present: Alice, Sophia, Anna, Nicolas, Nina.
 
 - Everybody agrees to apply to NumFOCUS.
-- Nicolas and Nina talk about refactoring the FiberBundle class, see `Issue 1480 <https://github.com/geomstats/geomstats/issues/1480>_`.
+- Nicolas and Nina talk about refactoring the FiberBundle class, see `Issue 1480 <https://github.com/geomstats/geomstats/issues/1480>`_.
 - Sophia presents future design of geometry module.
 - Anna and Sophia discuss literature reviews in machine learning linked to Geomstats.
 - Nina updates the group about Geomstats mailing lists: 
