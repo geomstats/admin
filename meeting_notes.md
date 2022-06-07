@@ -5,7 +5,17 @@ Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
 Meeting: 2022/06/07
 -------------------
+Present: Xavier, Luis, Anna, Alice, Nina.
 
+- The group sets up agenda items.
+- Alice presents the motivation and design behind refactoring solvers.
+- The group talks about pros and cons of the design of the solvers.
+- Nina describes Open Collective, NumFOCUS and CZI submitted applications.
+- Xavier discusses the interactions of these structures for Geomstats which is a cross-continents organizations.
+- Nina describes updates on governance and roadmap documents, the group adds items to the roadmap.
+- Luis presents on-going work on backends, numerical precision (setting a global parameter across backends) and tests.
+- Anna presents the strategy for the next months on the development of the stratified spaces.
+- Luis and Nina presents updates on progress made at Google Season of Docs.
 
 Meeting: 2022/05/03
 -------------------
