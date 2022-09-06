@@ -3,6 +3,21 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2022/09/06
+-------------------
+Present: Luis, Anna, Xavier, Nina, Alice.
+- Nina updates the group on the CZI grant application.
+- The group discusses the logistics of the next hackathon in October in Paris. Alice mentions that we have a room at the IHP, for 30 people, whole week.
+- Alice and Nina update the group about the information geometry module, which is almost completed but misses multivariate non-centered normals.
+- Anna updates the group about the stratified space module.
+- Luis updates the group about progress made on flag manifolds with Tom, which makes the connexion with pymanopt. 
+- The bridge with pymanopt does not work anymore, because the pymanopt's API changed. We might need to implement our own optimization methods.
+- Luis updates the group about new statistical tests, and estimators, that are being implemented.
+- Geomstats team mailing list does not work.
+- Luis explains the PR on the global dtype, that will solve the tolerance issues in Geomstats. It could be complex to understand. It will need to be made consistent with complex numbers.
+- Luis updates the group the work on the new solvers, with Alice.
+- Luis tells the group that we should use the latest versions of tensorflow and pytorch.
+
 Meeting: 2022/07/05
 -------------------
 Present: Luis, Anna, Xavier, Alice, Nicolas, Nina.
