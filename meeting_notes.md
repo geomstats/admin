@@ -3,6 +3,22 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2022/12/06
+-------------------
+TODO:
+- successful NumFOCUS application (Affiliated Project status)
+- survey on how participants liked the hackathons.
+- vote on removing TF (Johan offered to do it)
+
+Meeting: 2022/11/08
+-------------------
+Present: Anna, Nina.
+- Anna and Nina discuss the integration of the stratified spaces within the manifold structure.
+
+Meeting: 2022/10/11
+-------------------
+This meeting was replaced by conversations during the hackathon at the IHP. [The summary of the conversations can be found here](https://github.com/geomstats/geomstats/pull/1716).
+
 Meeting: 2022/09/06
 -------------------
 Present: Luis, Anna, Xavier, Nina, Alice.
