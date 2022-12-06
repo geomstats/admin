@@ -5,10 +5,20 @@ Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
 Meeting: 2022/12/06
 -------------------
-TODO:
-- successful NumFOCUS application (Affiliated Project status)
-- survey on how participants liked the hackathons.
-- vote on removing TF (Johan offered to do it)
+Present: Tra My, Alice, Luis, Nina.
+
+- The group discusses the successful NumFOCUS application (Affiliated Project status).
+- The group discusses end of google season of code. While it may be hard to enter the project, this internship created great interactions with python core community. We need to upgrade to Python 3.10 or 3.11
+- The group discusses the last hackathon, which involved great new contributors. 
+- The group discusses survey on how participants liked the hackathons, which can be sent at the end of the next one.
+- The group discusses removing TF (Johan offered to do it). For example, TF's reshape does a copy, and not a view, which slows down the library. We need to verify whether they have a view that we can wrap as reshape. We decided to keep TF but be nice with contributors when it fails.
+- The group talks about using Numba to speedup numpy, specifically for integrators.
+- Nina updates the group about the neurips workshop: geometry in neural representations.
+- New members have or will join the team: a new intern in Paris/UCSB on the shape module, who starts in Feb and a new engineer in Parisalso on the shape module.
+- The group discusses possible next hackathons (the one at the SIAM CSE conference may not happen): a smaller hackathon with new intern in Feb, another one in Paris with Yann end of June, depending on funding possibly another one in the US later next year.
+- Luis presents the strategy for the new test structures: use pytest more (not hacking pytest' parameterizer, marks)
+- The group agrees about the need to discuss complex manifolds.
+
 
 Meeting: 2022/11/08
 -------------------
