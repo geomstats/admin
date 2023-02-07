@@ -3,6 +3,21 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+
+Meeting: 2023/02/07
+-------------------
+Present: Xavier, Anna, Tra My, John, Yann, Luis, Nina.
+
+- Tests: test on geometry + vectorization tests are rewritten for manifolds (not for metrics): we cover 50%. Luis will push a PR with only fixes that emerged from the tests. Next step: do it for the metrics. Difficulty: structure for connection / metrics are not good, pb with extrinsic/intrinsic coordinates: the idea of equiping so that metric receives space will help and we need to move fast on this. Note: Morten implements pga for gsi -> shows how important it is to pass the space to the metric.
+- Geomstats tool for tests: experiment by Luis, which automatizes the writing of tests. It allows to get all methods of a space and see which tests are missing, by leveraging namings of methods. It is a standalone tool for now.
+- Conversion method are currently within the manifold -> move them out, which simplifies the tests. Proposal: an object that transforms coordinates: discussion on whether it should be: a standalone SphereTransform object, or go in the interface? Problem: how do we know what is the input to the conversion method? Changing from one chart to another is different from changing from a coord system to another? Problem: explosion in the number of manifolds: manifolds x charts. 
+- Immersed set implementation (Morten), requires immersion, then everything else comes from automatic diff. The group discusses whether OpenSet should inherit from ImmersedSet? We might not get anything from it except for code complexity. Note that, for LevelSet, when we go to higher codimensions, code might not work as well (when the level in LevelSet is not a value, but is of higher dimensions: add it in docs).
+- Numerics in solvers: Tra My & Luis are working on this, difficulty: needs changes in connection; blocked on manifold.equip and tests PRs. Will need to discuss integrators in geomstats, because we are underperforming against scipy which uses adaptive steps. (Ours are automatically differentiable -> important for learning). 
+- Fix: Some methods are not differentiable; e.g. broadcast arrays. -> need to find solutions to have learning algorithms work.
+- Information geometry: Tra My implemented distributions that are 1D: Geometric, Poisson, Binomial (closed forms solutions) and Exponential + modified Beta, Gamma because point_to_pdf was not working well + vectorized the FisherRaoMetric. NaN values in exp of FisherRao in pytorch, log, geodesics in autograd fail --> these errors could go away with adaptive optimization.
+- Future events? 1) Sprint to merge PRs, 2) Amsterdam SIAM conference: Luis presents Geomstats with Yann T., 3) GSI session: 30th august, Sept 1st?
+
+
 Meeting: 2022/12/06
 -------------------
 Present: Tra My, Alice, Luis, Nina.
