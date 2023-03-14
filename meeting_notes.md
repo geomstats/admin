@@ -4,6 +4,17 @@ Meeting Notes for Geomstats Monthly Meetings
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
 
+Meeting: 2023/03/14
+-------------------
+Present: Alice, Souhail, Anna, Luis, Yann, Nina, Xavier.
+
+- We have two free registrations for our GSI session: Luis and Nicolas will sync with Frederic and Xavier to organize.
+- Nina updates the group on the homework submitted by her students on visualizing manifolds.
+- Souhail & Alice update the group regarding the discrete curves refactor using the pullback diffeo metric: `SRVMetric`, `ElasticMetric`.
+- Anna updates the group regarding graph spaces, BHV space and Wald space. Xavier & Anna are writing a software report with the current examples.
+- Luis updates the group on recent progress refactoring the metric: metric takes the metric as input.
+- Luis updates the group on the work with Tra My on the solvers: she is vectorizing the log solver; Yann has an alternative implementation in pytorch.
+
 Meeting: 2023/02/07
 -------------------
 Present: Xavier, Anna, Tra My, John, Yann, Luis, Nina.
