@@ -3,6 +3,57 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2023/04/18
+-------------------
+Present: Anna, Tra My, Luis, Souhail, Nina, Alice, Yann.
+- Anna & Luis have started working on graph spaces again, will update next time.
+- Souhail updates the group on the dynamic programming algorithm on discrete curves, its complexity and precision properties. PR coming soon.
+- Tra My updates the group on the solvers, esp. Log solver, with tests. PR this week!
+- Luis discusses the "Refactor metric to receive space" PR. Everything is working, no new tests have been skipped. Missing feedback on fiber bundle. 
+
+Option 1 (Alice): One fiber bundle class:
+- with equip_with_action giving default_action
+-> defines what is the fiber, i.e. vertical space
+- default with ._metric that is the total metric on the total space, can change with equip_with_metric.
+-> defines what is the horizontal space that depends on ._metric
+- and ._quotient_metric that is one corresponding to the quotient metric for that action.
+- and ._quotient (base) that is a horizontal section of the bundle, for the ._metric
+
+Option 1bis: One fiber bundle class and a quotient space class:
+class FiberBundle:
+- equip_with_action gives ._action , default action that can be changed
+-> defines what is the fiber, i.e. vertical space
+- equip_with_metric gives ._metric , default metric that can be changed
+-> defines what is the horizontal space that depends on ._metric
+- Need to enforce that action and metric are compatible.
+Remark: does not know anything about its base
+
+class QuotientSpace: (the former .base)
+- has a .fiberbundle input with compatible action and metric
+- has a ._metric that is the corresponding quotient metric
+
+Remark: base space = space of all the fibers
+
+Note we have two main scenarios with FiberBundles:
+- Scenario 1: we have base explicit + total: example = full rank correlation matrices
+define same fiber bundle but also another space for the base space.
+- Scenario 2: when base is not known: example = kendall shape space
+Option 1 is nice for that scenario.
+
+Current: 
+- PreShape becomes: PreShapeSpace (total, nothing bundle, receives quotient metric) PreShapeBundle (total space inherits fiber bundle)
+Quick Correction:
+- PreShape becomes: PreShapeSpace (total, nothing bundle) PreShapeBundle (total space inherits fiber bundle, receives quotient metric)
+An alternative: 
+- PreShapeSpace = PreShapeSpaceBundle is the space before quotienting, should be the total space with total metric, add the bundle structure there.
+- ShapeSpace = SpaceSpaceQuotient is the space after quotienting, should have the quotient metric.
+
+Option 2: one fiber bundle per action: RotationBundle
+
+- Do we want to organize a challenge for TAG-ML at ICML Hawaii? Or any event associated with it? No.
+- New infrastructure? pyproject.toml is the new standard for packaging python packages, setup.py is now deprecated 
+- Need a plan to organize releases, let's release after the big PR.
+- Luis updates the group on the tests, some fixes (esp. vectorization) will come after the big PR.
 
 Meeting: 2023/03/14
 -------------------
