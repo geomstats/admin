@@ -3,6 +3,16 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+
+Meeting: 2023/05/02
+-------------------
+Present: Luis, Xavier, Souhail, Alice, Nina.
+- Souhail updates the group on refactoring discrete curves, so that it inherits from PullbackDiffeoMetric.
+- Nina updates the group on the discrete surfaces PR.
+- FiberBundle updates.
+- Solvers updates.
+
+
 Meeting: 2023/04/18
 -------------------
 Present: Anna, Tra My, Luis, Souhail, Nina, Alice, Yann.
