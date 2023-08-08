@@ -3,6 +3,13 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2023/08/08
+-------------------
+Present: Xavier, Nina.
+- FiberBundle and RiemannianSubmersion discussions.
+- Xavier gives updates about math in the mine and the upcoming GSI hackathon.
+
+
 
 Meeting: 2023/05/02
 -------------------
