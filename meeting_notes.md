@@ -3,6 +3,22 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2023/10/03
+-------------------
+Present: Xavier, Luis, Nina.
+- Hackathon in Sophia-Antipolis, on-site, February or March. 10-20 people. Travel, accomodation not funded. Lunch provided. Dinner not provided.
+- Information geometry (Luis):
+  - Tests + codebase were refactored in information geometry -> PR next week.
+  - The group discusses the limits of the Fisher-Rao metric with automatic differentiation. We should try to go beyond the basic, 1-dim examples.
+  - Luis is talking with Frank Nielsen to implement more functionalities.
+- Learning (Luis):
+  - Tests refactored. There is a problem with tangent PCA, we need more tests, we need to define what is the exact output of the algorithm. We need to correct for the metric in the computation of the covariance matrix (multiply it with the metric/co-metric on both sides: we need to diagonalize the (1,1)-tensor, i.e. the endomorphism). Or use an orthogonal basis in the tangent space, then express the Logs in that basis and diagonalize the covariance matrix from these.
+- Numerics in tests (Luis):
+  - n_trials variable, x_fails marker in pytest: to show when tests fail sometimes, either due to numerics or potentially to actual bugs in the codebase.
+- Luis is on-boarding Malik on the codebase related to landmarks, curves, and surfaces.
+- Simon could start working on the computation of the Log. Speeding up when there is an embedding. We could do approximate logs while controlling what's left, getting inspiration from Morten's work on the sub-Riemannian geodesics. Example of reaching an irrational number on the flat torus. Use the solvers to explore ideas very fast.
+- Collaboration with Materials Department (ideas from: CFD simulations, artery, LDDMM, template).
+
 Meeting: 2023/08/08
 -------------------
 Present: Xavier, Nina.
