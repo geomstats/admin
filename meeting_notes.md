@@ -3,6 +3,20 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2023/11/07
+-------------------
+Present: Malik, Xavier, Luis, Nina.
+- Malik updates the group on the discrete surfaces code, specifically the application of the log solver.
+  - 1. Amil's issue is almost solved: frechet_mean.fit(one_discrete_surface) gives an error when you give an array of shape [n_vertices, 3], because it assumes that the axis 0 is the n_samples
+  - --> should be of shape [n_samples, n_vertices, 3]
+  - --> needs at least two surfaces, or an array [1, n_vertices, 3]
+  - TODO for later: raise an error for the shape where data is of shape `space.shape`: tell the user to expand_dims the axis-0
+  - 2. Log is not working, because numpy does not have automatic differentiation. Instead, use: `export GEOMSTATS_BACKEND=pytorch`
+- Luis updates the group on the work with Anna: the goal is to finish the module `geodesic_metric_spaces`, including the Wald space. Interest in spaces of random matrices. LowerTriangularMatrices --> SymmetricStochasticMatrices. Collaborators may be interested in inexact computations, and investigating trade-off between exactness and computational times. Birkhoff polytope.
+- Luis updates the group on the work with Alice: Luis & Alice have refactored the `discrete_curves.py` module.
+- In SPDMatrices, most metrics are defined using a diffeomorphism: now we have a class `Diffeormorphism` (which impacts Malik's project).
+
+
 Meeting: 2023/10/03
 -------------------
 Present: Xavier, Luis, Nina.
