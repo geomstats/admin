@@ -3,6 +3,24 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2024/01/02
+-------------------
+Present: Xavier, Luis, Nina.
+- Luis is starting in Italy! with SB in september, potentially an intern joining at that time
+- Shape module project: discuss links with latest works from Emmanuel Hartman, Barbara Tumpach (curve reparameterization with higher sampling on high curvature regions), Jean Feydy (deformation of the space).
+  - Todo: Generalize to curves & surfaces in higher-dimensions, or on higher-dimensional manifolds.
+  - Todo: Add reparameterization of discrete surfaces with support for pykeops (optional requirement, not a backend), from Emmanuel Hartman's code.
+  - We can leave out the diffeomorphisms implementation for now: make it a standalone, bigger project.
+- Next step: add the implementation of the SVF, at least the exp and the log, in geomstats spirit, using Jean Feydy's pykeops and shape-ot.
+- New poisson geometry module project: Pablo Suárez-Serrato
+- New information geometry module (dual connection, bergman divergences using the code in java from Frank Nielsen) project: Pablo Suárez-Serrato
+- Mathematical structures: Note that we can do space.dist(p1, p2) with current approach. we have name clashing for group.exp() (Cartan-Shouten connection) and metric.exp() for groups, we need a priority rule.
+Divergence (=Dual Connections Flat? Note: only for convex spaces) --> Length Metric (with dist() method) --> Riemannian Metric (with dist() method)
+Connection --> Riemanian Metric (=Levi-Civita Connection --> get the dual connections from an additional tensor)
+Link with Hessian geometry, metric = hessian of a convex function
+- We need to plan the next hackathon: March? in September in UCSB?
+
+
 Meeting: 2023/11/07
 -------------------
 Present: Malik, Xavier, Luis, Nina.
