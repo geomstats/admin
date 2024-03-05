@@ -3,6 +3,17 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2024/03/05
+-------------------
+Present: Xavier, Luis, Pablo, Nina.
+- change of coordinates: distinguish between diffeomorphism-case (intrinsic to intrinsic) and immersion-case (intrinsic to extrinsic)
+- wald space is getting ready to merge! geometry-part only, more discussion needed on how to use learning algorithms there.
+- discussion on the aligners on discrete curves: dynamic programming seems to loose the notion of shape, is this a problem in our code?
+- speed: dynamic programming does not scale with the number of sampling points, our new symmetric aligner is independent of this number: much faster. Though: what's the shape we obtain?
+- discretization from continuous curves to discrete: what information can we hope to model/recover with our discretization?
+- updates on s2 with charts to bring in symplectic geometry
+- updates on bregman divergence for the next iteration of the information geometry module.
+
 Meeting: 2024/01/02
 -------------------
 Present: Xavier, Luis, Nina.
