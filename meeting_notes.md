@@ -6,7 +6,7 @@ Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
 Meeting: 2024/04/02
 -------------------
-Present: Malik, Daniel, Luis, Pablo, Nina.
+Present: Malik, Trey, Daniel, Luis, Pablo, Nina.
 - Discuss the status of the shape module. We need 1) to implement SRV transform can be used for any a, b combination on curve shapes in any R^d, 2) fix the dynamic programming algorithm for reparameterization of curve, 3) implement varifold distances.
 
 Meeting: 2024/03/05
