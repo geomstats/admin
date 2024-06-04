@@ -8,9 +8,24 @@ Meeting: 2024/06/04
 -------------------
 Present: Luis, Alice, Xavier, Pablo, Nina
 - Update on stratified spaces module by Luis.
-- Update on shape module.
+- Update on shape module:
+   - 1) Nina: Add paragraph in each section explaining the limitations of current implementations, and what research needs to be done to further improve stability and speed.
+   - 2) Nina: Add explanation in the docstrings of the quotient space structure that explains that quotient spaces are not manifold, but the principal stratum is a manifold.
+   - 3) Nina: Add explanation in the docstrings of the GroupComposition Python class: be upfront about the fact that it's only an approximation when groups do not commute -- highlight as an important future research direction.
+   - 4) Optional for the paper: Add unparameterized surfaces, but do not try to optimize decimation of meshes: instead, leave a note that the code is not stable nor fast -- highlight as an important future research direction.
+   - 5) Nina: Mention the fact that FréchetMean in the quotient space is biased -- highlight as an important future research direction.
+   - 6) Think about how to improve DiscreteCurves APIs: how do we instantiate DiscreteCurves with the L2 metric?
+   - 7) Nina: Say we don't have the action of rotations on DiscreteSurfaces -- highlight that it's a complicated issue, eg, what should be the center of rotations?
+   - 8) Luis: Use the same examples as Emmanuel's, but highlight i) improved readability, with consistency with the rest of the code + ii) performance speeds-ups: we are much faster doing the inner-product, which is the cornerstone of that part of the code.
+   - 9) Alice: Highlight future research direction: discrete curves on Lie groups, thanks to geomstats' design.
+   - 10) Optional for the paper: Luis/Alice: Implement the cone metric: right now, we only have it for restrictions on a, b parameters. Find the geodesic equation in closed form.
+   - 11) Luis: Make 3 missing architecture diagrams.
+   - 12) Leave varifolds out of this.
 - Update on CIRM workshop.: Luis presented Geomstats.
-- Update on advanced information geometry module with divergences and dual connections: Need to add tests, and clean up the design.
+- Update on advanced information geometry module with divergences and dual connections:
+   - 1) Need to add tests,
+   - 2) Need clean up the design,
+   - 3) Need to take user perspective and write user's code before we design the core codebase.
 - Update on visualization: add vector fields on the fields, thanks to on-going numerical regression work of Pablo with poisson-geometry module.
 - Would be good to have a symbolic version of computations on manifolds. Different backend? Could we do it with sympy?
 
