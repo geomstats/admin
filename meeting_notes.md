@@ -4,6 +4,16 @@ Meeting Notes for Geomstats Monthly Meetings
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
 
+Meeting: 2024/06/04
+-------------------
+Present: Luis, Alice, Xavier, Pablo, Nina
+- Update on stratified spaces module by Luis.
+- Update on shape module.
+- Update on CIRM workshop.: Luis presented Geomstats.
+- Update on advanced information geometry module with divergences and dual connections: Need to add tests, and clean up the design.
+- Update on visualization: add vector fields on the fields, thanks to on-going numerical regression work of Pablo with poisson-geometry module.
+- Would be good to have a symbolic version of computations on manifolds. Different backend? Could we do it with sympy?
+
 Meeting: 2024/04/02
 -------------------
 Present: Malik, Trey, Daniel, Luis, Pablo, Nina.
