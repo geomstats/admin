@@ -3,6 +3,22 @@ Meeting Notes for Geomstats Monthly Meetings
 
 Geomstats meetings take place the first Tuesday of each month, at 8.30 am PST.
 
+Meeting: 2024/07/02
+-------------------
+Present: Xavier, Luis, Nina
+- Update on metrics on correlation matrices.
+- Update on advanced information geometry: need to brainstorm on how the different structures interact, in the context of bregman divergences, dual connections, etc.
+- Example of interacting structures:
+  - In theorem: Statistical manifold needs metric tensor and 3rd-order tensor --> induces a dual connection structure wrt another, and wrt the metric
+  - In definition: metric + compatible dual connection --> 3rd-order tensor
+- Example of interacting structures: Riemannian metric:
+  - if we have the inner_product (which comes with an implicit choice of basis for its input tangent vectors -- possibly basis of the embedding space), we should be able to compute the metric_matrix, if we know on a intrinsic basis of the manifold's tangent space. Maybe that's done for ImmersedManifolds only, since this is where we have these basis defined.
+- Example of interacting structures: Subriemannian manifold:
+  - Structure can be created from two inits.
+- Improve the design of Lie groups : take a HOWTO approach. On Lie groups, the only cases where we have explicit geodesic equations are for bi-invariant metrics. Everything else needs to be done via integration (with ad*). Nicolas, on SE(3), took the classic bi-invariant metric on SO(3) and a non-isotropic metric on R3, and he might have been able to get an explicit equation.
+- Need to go through notebooks taking a user approach, and add documentation.
+- Need to go through remaining TODOs, eg, for the cone metric.
+
 
 Meeting: 2024/06/04
 -------------------
